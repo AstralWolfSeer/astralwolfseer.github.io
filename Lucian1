@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolftower Graveyard</title>
+  <style>
+    body {
+      margin: 0;    
+      background: linear-gradient(#0f0f0f, #1c1c1c);
+      color: #ddd;
+      font-family: 'Georgia', serif;
+      background-image: url('https://i.imgur.com/OzZDzQ5.jpg'); /* Use a gothic graveyard image URL */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 60px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #c9b279;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 1.2em;
+    }
+
+    .quote {
+      margin-top: 40px;
+      font-style: italic;
+      color: #aaa;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Wolftower Graveyard</h1>
+    <p>Where the past whispers, and time stands still under twisted yew trees. Welcome to the ancient resting place beneath the cold gaze of the moon.</p>
+    
+    <p class="quote">“Speak not to the stones, unless thou art ready to hear.”</p>
+
+    <footer>&copy; 2025 Wolftower</footer>
+  </div>
+</body>
+</html>
