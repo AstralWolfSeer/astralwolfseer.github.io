@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wolftower Sanctum</title>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
-      background-color: #0b0b0b;
-      color: #e0e0e0;
-      font-family: 'IM Fell English', serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      background-size: cover;
-      background-repeat: repeat;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wolftower Sanctum</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+body {
+margin: 0;
+padding: 0;
+background-color: #0b0b0b;
+color: #e0e0e0;
+font-family: 'IM Fell English', serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+text-align: center;
+background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
+overflow: hidden;
+}
 
-    h1 {
-      font-size: 3.5em;
-      color: #cfcfcf;
-      text-shadow: 2px 2px 4px #000;
-      margin-bottom: 10px;
-    }
 
-    p {
-      font-size: 1.3em;
-      max-width: 600px;
-      margin: 20px auto;
-      color: #a9a9a9;
-    }
+h1 {
+font-size: 3.5em;
+color: #cfcfcf;
+text-shadow: 2px 2px 4px #000;
+margin-bottom: 10px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background-color: #222;
-      border: 1px solid #555;
-      border-radius: 6px;
-      color: #f5f5f5;
-      text-decoration: none;
-      font-size: 1.1em;
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-    }
 
-    .button:hover {
-      background-color: #444;
-      box-shadow: 0 0 12px #888;
-    }
+p {
+font-size: 1.3em;
+max-width: 600px;
+margin: 20px auto;
+color: #a9a9a9;
+}
 
-    .grave-icon {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
 
-    .lore {
-      font-style: italic;
-      color: #999;
-      font-size: 1.1em;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
-  <div class="grave-icon">🪦</div>
-  <h1>Wolftower Graveyard</h1>
-  <p>The veil is thin here. The wind whispers through old stones.  
-     You stand upon ancient soil, where the past never sleeps…</p>
+.button {
+display: inline-block;
+margin-top: 30px;
+padding: 14px 28px;
+background-color: #222;
+border: 1px solid #555;
+border-radius: 6px;
+color: #f5f5f5;
+text-decoration: none;
+font-size: 1.1em;
+transition: background 0.3s ease, box-shadow 0.3s ease;
+}
 
-  <div class="lore">“Somewhere between the bone and the storm… you returned.”</div>
 
-  <a class="button" href="https://beacons.ai/tomwolf" target="_blank">Enter the Tower</a>
-</body>
-</html>
+.button:hover {
+background-color: #444;
+box-shadow: 0 0 12px #888;
+}
+
+
+.grave-icon {
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+
+.lore {
+font-style: italic;
+color: #999;
+font-size: 1.1em;
+margin-top: 15px;
+}
+
+
+.fog {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('https://i.ibb.co/NF4ZvTP/fog2.png') repeat;
+animation: fogmove 60s linear infinite;
+opacity: 0.08;
+pointer-events: none;
+}
+
+
+@keyframes fogmove {
+0% { background-position: 0 0; }
+100% { background-position: 1000px 0; }
+}
+
+
+.candle {
+position: absolute;
+bottom: 20px;
+width: 20px;
+height: 40px;
+background: radial-gradient(ellipse at center, #ff9900 0%, #cc6600 70%, transparent 80%);
