@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Wolftower Graveyard</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-<style>
-body {
-margin: 0;
-padding: 0;
-height: 100vh;
-background: url('https://images.unsplash.com/photo-1508264165352-258a6c0c37b4?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-background-size: cover;
-font-family: 'IM Fell English SC', serif;
-color: #dcdcdc;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-background-color: rgba(0, 0, 0, 0.8);
-background-blend-mode: multiply;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astral Wolf Seer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cinzel', serif;
+      color: #f5f5f5;
+      background: #0a0a0a url('mist.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+    }
 
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(10, 10, 10, 0.6);
+      z-index: 1;
+    }
 
-h1 {
-font-family: 'UnifrakturCook', cursive;
-font-size: 3.5em;
-color: #e2e2e2;
-margin-bottom: 0.3em;
-text-shadow: 2px 2px 4px #000;
-}
+    .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 15vh;
+    }
 
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      color: #e6e6e6;
+    }
 
-p.tagline {
-font-size: 1.2em;
-color: #bbb;
-max-width: 700px;
-margin: 0 auto 1em;
-text-shadow: 1px 1px 2px #000;
-}
+    .button-container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
 
+    .button {
+      background-color: rgba(44, 44, 44, 0.8);
+      border: 1px solid #888;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
 
-blockquote {
-font-style: italic;
-font-size: 1em;
-color: #888;
-margin-bottom: 2em;
-}
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #e0c882;
+      border-color: #e0c882;
+      box-shadow: 0 0 20px #e0c88288;
+    }
 
+    .fog {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('fog.gif') repeat;
+      background-size: cover;
+      opacity: 0.15;
+      z-index: 0;
+      pointer-events: none;
+    }
 
-.button {
-background-color: #1a1a1a;
-border: 1px solid #888;
-color: #eee;
-padding: 12px 24px;
-margin: 8px;
-font-size: 1em;
-cursor: pointer;
-transition: 0.3s;
-}
-
-
-.button:hover {
-background-color: #2e2e2e;
-border-color: #aaa;
-}
-
-
-.nav-buttons {
-display: flex;
-flex-direction: column;
-gap: 12px;
-}
-</style>
+    audio {
+      display: none;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
 </head>
-
-
 <body>
-<h1>Wolftower Graveyard</h1>
-<p class="tagline">
-The veil is thin here. The wind whispers through old stones.
-You stand upon ancient soil, where the past never sleeps…
-</p>
-<blockquote>
-"Somewhere between the bone and the storm... you returned."
-</blockquote>
+  <div class="overlay"></div>
+  <div class="fog"></div>
+  <div class="container">
+    <h1>𝕿𝖍𝖊 𝕲𝖗𝖆𝖛𝖊𝖞𝖆𝖗𝖉</h1>
+
+    <div class="button-container">
+      <a href="tomb.html" class="button">⚰️ Tomb of Origins</a>
+      <a href="tower.html" class="button">🜂 Tower of the Watcher</a>
+      <a href="rituals.html" class="button">🜃 Rituals of Self-Reclamation</a>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="whispers.mp3" type="audio/mpeg">
+  </audio>
+</body>
 </html>
