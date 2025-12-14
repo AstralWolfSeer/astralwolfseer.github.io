@@ -98,3 +98,39 @@ bottom: 20px;
 width: 20px;
 height: 40px;
 background: radial-gradient(ellipse at center, #ff9900 0%, #cc6600 70%, transparent 80%);
+border-radius: 50%;
+box-shadow: 0 0 20px #ff9900, 0 0 40px #cc6600;
+animation: flicker 1s infinite alternate;
+}
+
+
+@keyframes flicker {
+from { opacity: 0.9; transform: scale(1); }
+to { opacity: 0.7; transform: scale(1.05); }
+}
+</style>
+</head>
+<body>
+<div class="fog"></div>
+<div class="grave-icon">🪦</div>
+<h1>Wolftower Graveyard</h1>
+<p>The veil is thin here. The wind whispers through old stones. <br>You stand upon ancient soil, where the past never sleeps…</p>
+<div class="lore">“Somewhere between the bone and the storm… you returned.”</div>
+
+
+<a class="button" href="https://beacons.ai/tomwolf" target="_blank">Enter the Tower</a>
+<br><br>
+<a class="button" href="tombstone1.html">🪦 Tomb of Origins</a>
+<a class="button" href="tombstone2.html">🪦 Rituals of Self-Reclamation</a>
+
+
+<div class="candle" style="left: 50px;"></div>
+<div class="candle" style="right: 50px;"></div>
+
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2023/05/08/audio_9c90a6f1e1.mp3?filename=ghostly-forest-wind-146486.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</body>
+</html>
