@@ -2,51 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tom Wolf — Self-Reclamation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wolftower Sanctum</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #f1f1f1;
-      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
+      background-color: #0b0b0b;
+      color: #e0e0e0;
+      font-family: 'IM Fell English', serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       text-align: center;
+      background-size: cover;
+      background-repeat: repeat;
     }
+
     h1 {
-      font-size: 3em;
-      letter-spacing: 2px;
-      color: #f8f8f8;
+      font-size: 3.5em;
+      color: #cfcfcf;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       max-width: 600px;
-      margin: 20px 0;
-      color: #aaa;
+      margin: 20px auto;
+      color: #a9a9a9;
     }
-    a.button {
+
+    .button {
+      display: inline-block;
       margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #444;
-      color: #fff;
-      text-decoration: none;
+      padding: 14px 28px;
+      background-color: #222;
+      border: 1px solid #555;
       border-radius: 6px;
-      transition: background 0.3s ease;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
     }
-    a.button:hover {
-      background-color: #777;
+
+    .button:hover {
+      background-color: #444;
+      box-shadow: 0 0 12px #888;
+    }
+
+    .grave-icon {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .lore {
+      font-style: italic;
+      color: #999;
+      font-size: 1.1em;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-  <h1>Tom Wolf</h1>
-  <p>Guiding the lost into wholeness.  
-     Self-Reclamation, Emotional Mastery, Inner Integration.</p>
-  <a href="https://beacons.ai/tomwolf" class="button">Enter the Tower</a>
+  <div class="grave-icon">🪦</div>
+  <h1>Wolftower Graveyard</h1>
+  <p>The veil is thin here. The wind whispers through old stones.  
+     You stand upon ancient soil, where the past never sleeps…</p>
+
+  <div class="lore">“Somewhere between the bone and the storm… you returned.”</div>
+
+  <a class="button" href="https://beacons.ai/tomwolf" target="_blank">Enter the Tower</a>
 </body>
 </html>
